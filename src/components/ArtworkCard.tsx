@@ -68,10 +68,6 @@ export default function ArtworkCard({ artwork, onClick }: ArtworkCardProps) {
         <h3 className="text-lg font-semibold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">
           {artwork.title}
         </h3>
-        
-        <p className="text-sm text-gray-600 mb-3 line-clamp-2">
-          {artwork.description}
-        </p>
 
         {/* Materials */}
         <div className="mb-3">
