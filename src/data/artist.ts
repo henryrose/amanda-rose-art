@@ -13,9 +13,9 @@ export interface Artist {
 
 export const artist: Artist = {
   name: "Amanda Rose",
-  photoUrl: "/images/artist/amanda-rose-photo.svg",
-  artistStatement: "I create art that explores the intersection of emotion, memory, and the natural world. Each piece is a journey of discovery, where I blend traditional techniques with contemporary approaches to capture moments of beauty and meaning.",
-  bio: "Amanda Rose is a contemporary artist based in Portland, Oregon, specializing in painting and ceramics. With over 15 years of experience, her work has been exhibited in galleries across the Pacific Northwest and featured in several art publications. Amanda's artistic practice is deeply rooted in her connection to nature and her exploration of human emotion through color, texture, and form. She holds a BFA from the Pacific Northwest College of Art and continues to develop her craft through ongoing study and experimentation.",
+  photoUrl: "/images/artist/amanda-rose.png",
+  artistStatement: "I create art as a meditation on nature, motherhood, and presence. Working in acrylics on plywood, ceramics, and fiber, I explore the quiet spaces where the outer world meets the inner one. My practice is rooted in stillness—shaped by time in nature, the rhythms of daily life, and the perspective of my young daughter. Each piece is an invitation to slow down, notice, and connect.",
+  bio: "These peaceful meditation-informed pieces will look amazing in your Peloton room. All works are acrylic paintings on wood unless otherwise specified. Some have had a resin application, others are matte with optional resin application. As always, inquire within. ",
   contactEmail: "amanda@example.com",
   socialLinks: {
     instagram: "https://instagram.com/amandaroseart",
