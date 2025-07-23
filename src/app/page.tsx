@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image";
 import { artist } from '@/data/artist';
 
@@ -5,13 +7,13 @@ export default function BioPage() {
   return (
     <div className="bg-gray-50 min-h-screen">
       {/* Hero Section */}
-      <section className=" py-20">
+      <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
             {artist.name}
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-fade-in-delay">
-            Painter & Ceramicist
+            Contemporary Artist & Ceramicist
           </p>
         </div>
       </section>
@@ -29,6 +31,25 @@ export default function BioPage() {
                   fill
                   className="object-cover"
                   priority
+                  onError={(e) => {
+                    // Fallback to a placeholder if image fails to load
+                    const target = e.target as HTMLImageElement;
+                    target.style.display = 'none';
+                    const parent = target.parentElement;
+                    if (parent) {
+                      parent.innerHTML = `
+                        <div class="flex items-center justify-center h-full bg-gradient-to-br from-blue-100 to-purple-100">
+                          <div class="text-center">
+                            <div class="w-24 h-24 bg-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center">
+                              <span class="text-white text-2xl font-bold">AR</span>
+                            </div>
+                            <p class="text-gray-600 font-medium">Amanda Rose</p>
+                            <p class="text-gray-500 text-sm">Artist Photo</p>
+                          </div>
+                        </div>
+                      `;
+                    }
+                  }}
                 />
               </div>
             </div>
