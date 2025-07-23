@@ -5,9 +5,9 @@ import { artist } from '@/data/artist';
 
 export default function BioPage() {
   return (
-    <div className="bg-gray-50 min-h-screen">
+    <div className="min-h-screen" style={{backgroundColor: '#f9edec'}}>
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
+      <section className="bg-gradient-to-r from-neutral-600 to-amber-700 text-white py-20" style={{background: 'linear-gradient(to right, #c7bfb2, #a3534a)'}}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
             {artist.name}
@@ -73,15 +73,18 @@ export default function BioPage() {
               </div>
 
               {/* Contact CTA */}
-              <div className="bg-white p-6 rounded-lg shadow-md">
-                <h4 className="text-lg font-semibold text-gray-900 mb-3">Get in Touch</h4>
-                <p className="text-gray-600 mb-4">
+              <div className="p-6 rounded-lg shadow-md" style={{backgroundColor: '#dcd4c1'}}>
+                <h4 className="text-lg font-semibold mb-3" style={{color: '#a3534a'}}>Get in Touch</h4>
+                <p className="mb-4" style={{color: '#635a52'}}>
                   Interested in my work? I&apos;d love to hear from you about commissions, 
                   collaborations, or just to say hello.
                 </p>
                 <a
                   href={`mailto:${artist.contactEmail}`}
-                  className="inline-flex items-center bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
+                  className="inline-flex items-center text-white px-6 py-3 rounded-lg font-medium transition-colors"
+                  style={{backgroundColor: '#a3534a'}}
+                  onMouseEnter={(e) => (e.target as HTMLAnchorElement).style.backgroundColor = '#8e4841'}
+                  onMouseLeave={(e) => (e.target as HTMLAnchorElement).style.backgroundColor = '#a3534a'}
                 >
                   Contact Me
                 </a>
@@ -101,7 +104,10 @@ export default function BioPage() {
             </p>
             <a
               href="/gallery"
-              className="inline-flex items-center bg-gray-900 text-white px-8 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors"
+              className="inline-flex items-center text-white px-8 py-3 rounded-lg font-medium transition-colors"
+              style={{backgroundColor: '#a3534a'}}
+              onMouseEnter={(e) => (e.target as HTMLAnchorElement).style.backgroundColor = '#8e4841'}
+              onMouseLeave={(e) => (e.target as HTMLAnchorElement).style.backgroundColor = '#a3534a'}
             >
               View Gallery
             </a>
