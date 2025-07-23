@@ -19,9 +19,8 @@ export const artwork: Artwork[] = [
     description: '[UPDATE WITH REAL DESCRIPTION - Add the story behind this piece, inspiration, techniques used, etc.]',
     materials: ['Acrylic on birch ply'],
     availability: 'sold',
-    price: 200, // UPDATE PRICE
     imageUrl: '/amanda-rose-art/images/artwork/LW6-removebg.png',
-    thumbnailUrl: '/amanda-rose-art/images/artwork/thumbnails/lw6-removebg.jpg',
+    thumbnailUrl: '/amanda-rose-art/images/artwork/thumbnails/LW6-removebg.jpg',
     dimensions: '4" x 12"',
     year: 2020, // UPDATE YEAR
     category: '[UPDATE CATEGORY]'
@@ -32,9 +31,8 @@ export const artwork: Artwork[] = [
     description: '[UPDATE WITH REAL DESCRIPTION - Add the story behind this piece, inspiration, techniques used, etc.]',
     materials: ['Acrylic on birch ply'],
     availability: 'sold',
-    price: 0, // UPDATE PRICE
     imageUrl: '/amanda-rose-art/images/artwork/LW7-removebg.png',
-    thumbnailUrl: '/amanda-rose-art/images/artwork/thumbnails/lw7-removebg.jpg',
+    thumbnailUrl: '/amanda-rose-art/images/artwork/thumbnails/LW7-removebg.jpg',
     dimensions: '4" x 12"',
     year: 2024, // UPDATE YEAR
     category: '[UPDATE CATEGORY]'
@@ -45,9 +43,8 @@ export const artwork: Artwork[] = [
     description: '[UPDATE WITH REAL DESCRIPTION - Add the story behind this piece, inspiration, techniques used, etc.]',
     materials: ['Acrylic on birch ply'],
     availability: 'sold',
-    price: 0, // UPDATE PRICE
     imageUrl: '/amanda-rose-art/images/artwork/LW8-removebg.png',
-    thumbnailUrl: '/amanda-rose-art/images/artwork/thumbnails/lw8-removebg.jpg',
+    thumbnailUrl: '/amanda-rose-art/images/artwork/thumbnails/LW8-removebg.jpg',
     dimensions: '3" x 6"',
     year: 2024, // UPDATE YEAR
     category: '[UPDATE CATEGORY]'
